@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "ecomPatProject"
-include ':app'
+include(":app")

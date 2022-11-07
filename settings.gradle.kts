@@ -1,16 +1,15 @@
 pluginManagement {
     repositories {
+        google()
         gradlePluginPortal()
-        google()
-        mavenCentral()
     }
 }
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
+
 rootProject.name = "ecomPatProject"
-include(":app")
+
+listOf(
+    ":app",
+    ":core:ui",
+).forEach {
+    include(it)
+}

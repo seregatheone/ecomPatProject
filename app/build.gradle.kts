@@ -33,6 +33,7 @@ android {
 }
 
 dependencies {
+
     implementation(Dependencies.Android.coreKtx)
     implementation(Dependencies.Android.appCompat)
     implementation(Dependencies.Android.material)

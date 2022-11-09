@@ -1,5 +1,6 @@
 plugins {
     id("com.android.library")
+    kotlin("android")
 }
 
 android {
@@ -10,4 +11,8 @@ android {
         minSdk = Config.minSdkVersion
         targetSdk = Config.targetSdkVersion
     }
+}
+dependencies{
+    api(Dependencies.Dagger.dagger)
+    api(project(":core:dagger"))
 }

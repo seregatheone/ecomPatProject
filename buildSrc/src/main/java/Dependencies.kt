@@ -13,4 +13,14 @@ object Dependencies {
         const val espresso = "androidx.test.espresso:espresso-core:3.4.0"
     }
 
+    object Kotlin{
+        const val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib:${Plugins.kotlinVersion}"
+    }
+
+    object Dagger {
+        private const val daggerVersion = "2.44"
+        const val dagger = "com.google.dagger:dagger:$daggerVersion"
+        const val daggerCompiler = "com.google.dagger:dagger-compiler:$daggerVersion"
+    }
+
 }

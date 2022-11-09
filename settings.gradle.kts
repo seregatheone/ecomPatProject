@@ -12,6 +12,7 @@ listOf(
     ":core:ui",
     ":core:dagger",
     ":core:dagger-annotations",
+    ":feature:splashscreen",
 ).forEach {
     include(it)
 }

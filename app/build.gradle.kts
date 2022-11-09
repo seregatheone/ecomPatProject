@@ -33,12 +33,18 @@ android {
 }
 
 dependencies {
+    implementation(project(":core:dagger"))
+    //dagger
+    implementation(Dependencies.Dagger.dagger)
+    implementation(Dependencies.Dagger.daggerCompiler)
 
+    //android deps
     implementation(Dependencies.Android.coreKtx)
     implementation(Dependencies.Android.appCompat)
     implementation(Dependencies.Android.material)
     implementation(Dependencies.Android.constraintLayout)
 
+    //unit and android tests
     testImplementation(Dependencies.Test.jUnit)
     androidTestImplementation(Dependencies.Test.espresso)
     androidTestImplementation(Dependencies.Test.androidJUnit)

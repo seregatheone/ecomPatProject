@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = Config.nameSpace+".core_dagger_annotations"
+    namespace = Config.nameSpace
     compileSdk = Config.compileSdkVersion
 
     defaultConfig{

@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = Config.nameSpace+".core_ui"
+    namespace = Config.nameSpace
     compileSdk = Config.compileSdkVersion
 
     defaultConfig{

@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = Config.nameSpace+".splashscreen"
+    namespace = Config.nameSpace
     compileSdk = Config.compileSdkVersion
 
     defaultConfig {

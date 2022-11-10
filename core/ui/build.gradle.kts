@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = Config.nameSpace
+    namespace = Config.coreUiNameSpace
     compileSdk = Config.compileSdkVersion
 
     defaultConfig{

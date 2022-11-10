@@ -21,6 +21,7 @@ object Dependencies {
         private const val daggerVersion = "2.44"
         const val dagger = "com.google.dagger:dagger:$daggerVersion"
         const val daggerCompiler = "com.google.dagger:dagger-compiler:$daggerVersion"
+        const val daggerAndroidProcessor = "com.google.dagger:dagger-android-processor:$daggerVersion"
     }
 
 }

@@ -1,5 +1,5 @@
 plugins {
-    id("com.android.application")
+    id("com.android.library")
     kotlin("android")
 }
 
@@ -8,11 +8,8 @@ android {
     compileSdk = Config.compileSdkVersion
 
     defaultConfig {
-        applicationId = Config.nameSpace
         minSdk = Config.minSdkVersion
         targetSdk = Config.targetSdkVersion
-        versionCode = Config.versionCode
-        versionName = Config.versionName
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -34,18 +31,12 @@ android {
 
 dependencies {
     //project modules
-    implementation(project(":core:dagger"))
-    implementation(project(":feature:splashscreen"))
-
-    //dagger
-    implementation(Dependencies.Dagger.dagger)
-    implementation(Dependencies.Dagger.daggerCompiler)
+    implementation(project(":core:ui"))
 
     //android deps
     implementation(Dependencies.Android.coreKtx)
     implementation(Dependencies.Android.appCompat)
     implementation(Dependencies.Android.material)
-    implementation(Dependencies.Android.constraintLayout)
 
     //unit and android tests
     testImplementation(Dependencies.Test.jUnit)

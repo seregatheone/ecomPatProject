@@ -1,19 +1,15 @@
 plugins {
-    id("com.android.application")
+    id("com.android.library")
     kotlin("android")
-    id("kotlin-kapt")
 }
 
 android {
-    namespace = Config.appNameSpace
+    namespace = Config.nameSpace
     compileSdk = Config.compileSdkVersion
 
     defaultConfig {
-        applicationId = Config.appNameSpace
         minSdk = Config.minSdkVersion
         targetSdk = Config.targetSdkVersion
-        versionCode = Config.versionCode
-        versionName = Config.versionName
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -35,19 +31,12 @@ android {
 
 dependencies {
     //project modules
-    implementation(project(":core:dagger"))
-    implementation(project(":feature:splashscreen"))
-
-    //dagger
-    implementation(Dependencies.Dagger.dagger)
-    kapt(Dependencies.Dagger.daggerCompiler)
-    kapt(Dependencies.Dagger.daggerAndroidProcessor)
+    implementation(project(":core:ui"))
 
     //android deps
     implementation(Dependencies.Android.coreKtx)
     implementation(Dependencies.Android.appCompat)
     implementation(Dependencies.Android.material)
-    implementation(Dependencies.Android.constraintLayout)
 
     //unit and android tests
     testImplementation(Dependencies.Test.jUnit)

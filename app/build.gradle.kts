@@ -1,14 +1,15 @@
 plugins {
     id("com.android.application")
     kotlin("android")
+    id("kotlin-kapt")
 }
 
 android {
-    namespace = Config.nameSpace
+    namespace = Config.appNameSpace
     compileSdk = Config.compileSdkVersion
 
     defaultConfig {
-        applicationId = Config.nameSpace
+        applicationId = Config.appNameSpace
         minSdk = Config.minSdkVersion
         targetSdk = Config.targetSdkVersion
         versionCode = Config.versionCode
@@ -36,7 +37,8 @@ dependencies {
     implementation(project(":core:dagger"))
     //dagger
     implementation(Dependencies.Dagger.dagger)
-    implementation(Dependencies.Dagger.daggerCompiler)
+    kapt(Dependencies.Dagger.daggerCompiler)
+    kapt(Dependencies.Dagger.daggerAndroidProcessor)
 
     //android deps
     implementation(Dependencies.Android.coreKtx)

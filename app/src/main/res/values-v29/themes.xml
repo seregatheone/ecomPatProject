@@ -11,9 +11,9 @@
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">@color/project_white</item>
         <!-- Customize your theme here. -->
         <item name="android:forceDarkAllowed">false</item>
-        <item name="appBarLayoutStyle">@color/project_white</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
 </resources>

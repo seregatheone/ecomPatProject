@@ -31,6 +31,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures{
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -42,6 +45,9 @@ dependencies {
 
     implementation(project(":feature:splashscreen"))
     implementation(project(":feature:home"))
+
+    //viewBinding
+    implementation(Dependencies.ViewBinding.viewbindingpropertydelegate)
 
     //dagger
     implementation(Dependencies.Dagger.dagger)

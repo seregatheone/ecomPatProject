@@ -29,4 +29,8 @@ object Dependencies {
         const val daggerAndroidProcessor = "com.google.dagger:dagger-android-processor:$daggerVersion"
     }
 
+    object ViewBinding{
+        const val viewbindingpropertydelegate = "com.github.kirich1409:viewbindingpropertydelegate-noreflection:1.5.6"
+    }
+
 }

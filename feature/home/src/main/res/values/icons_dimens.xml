@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="arrow_down_dimen">15dp</dimen>
+
+    <dimen name="filter_dimen">15dp</dimen>
+    <dimen name="location_dimen">15dp</dimen>
+
+    <dimen name="qr_code_icon_size">16dp</dimen>
+    <dimen name="search_view_radius">16dp</dimen>
+</resources>

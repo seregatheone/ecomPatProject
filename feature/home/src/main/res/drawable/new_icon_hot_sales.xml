@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/project_orange"/>
+    <size android:height="@dimen/new_icon_hot_sales_dimen"
+        android:width = "@dimen/new_icon_hot_sales_dimen"/>
+</shape>

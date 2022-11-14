@@ -26,8 +26,6 @@ class SplashScreenFragment : Fragment(R.layout.splash_screen_fragment) {
         delay(3000)
     }
 
-
-
     override fun onAttach(context: Context) {
         DaggerSplashScreenComponent.builder()
             .splashScreenDeps(findDependencies())

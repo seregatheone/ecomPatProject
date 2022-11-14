@@ -17,4 +17,5 @@ object Config {
 
     const val featureSplashScreenNameSpace = "$featureNameSpace.splashscreen"
     const val featureHomeNameSpace = "$featureNameSpace.home"
+    const val featureCartNameSpace = "$featureNameSpace.cart"
 }

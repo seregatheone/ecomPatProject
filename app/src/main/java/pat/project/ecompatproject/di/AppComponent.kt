@@ -4,6 +4,7 @@ import android.app.Application
 import dagger.BindsInstance
 import dagger.Component
 import dagger.Module
+import pat.project.cart.presentation.di.CartDeps
 import pat.project.ecompatproject.ProjectApplication
 import pat.project.ecompatproject.di.feature_deps.HomeDepsModule
 import pat.project.ecompatproject.di.feature_deps.SplashScreenDepsModule
@@ -11,7 +12,7 @@ import pat.project.home.presentation.di.HomeDeps
 import pat.project.splashscreen.presentation.di.SplashScreenDeps
 
 @Component(modules = [AppModule::class, SplashScreenDepsModule::class, HomeDepsModule::class])
-interface AppComponent : SplashScreenDeps, HomeDeps {
+interface AppComponent : SplashScreenDeps, HomeDeps, CartDeps {
 
     @Component.Builder
     interface Builder {

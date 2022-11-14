@@ -13,6 +13,8 @@ listOf(
     ":core:dagger",
     ":core:dagger-annotations",
     ":feature:splashscreen",
+    ":core:navigation",
+    ":feature:home",
 ).forEach {
     include(it)
 }

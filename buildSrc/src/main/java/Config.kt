@@ -11,8 +11,10 @@ object Config {
     const val coreUiNameSpace = "$coreNameSpace.ui"
     const val coreDaggerNameSpace = "$coreNameSpace.dagger"
     const val coreDaggerAnnotationsNameSpace = "$coreNameSpace.dagger_annotations"
+    const val coreNavigationNameSpace = "$coreNameSpace.navigation"
     /////////
     private const val featureNameSpace = "$appNameSpace.feature"
 
-    const val featureSplashScreen = "$featureNameSpace.splashscreen"
+    const val featureSplashScreenNameSpace = "$featureNameSpace.splashscreen"
+    const val featureHomeNameSpace = "$featureNameSpace.home"
 }

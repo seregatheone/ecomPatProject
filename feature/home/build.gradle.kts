@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = Config.featureSplashScreenNameSpace
+    namespace = Config.featureHomeNameSpace
     compileSdk = Config.compileSdkVersion
 
     defaultConfig {
@@ -50,6 +50,7 @@ dependencies {
     //android deps
     implementation(Dependencies.Android.coreKtx)
     implementation(Dependencies.Android.appCompat)
+    implementation(Dependencies.Android.material)
 
     //unit and android tests
     testImplementation(Dependencies.Test.jUnit)

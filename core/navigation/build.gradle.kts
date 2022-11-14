@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = Config.coreDaggerAnnotationsNameSpace
+    namespace = Config.coreNavigationNameSpace
     compileSdk = Config.compileSdkVersion
 
     defaultConfig{
@@ -13,6 +13,6 @@ android {
     }
 }
 dependencies{
-    implementation(Dependencies.Dagger.dagger)
-    api(project(":core:dagger"))
+    implementation(Dependencies.Navigation.navigationFragmentKtx)
+    implementation(Dependencies.Navigation.navigationUi)
 }

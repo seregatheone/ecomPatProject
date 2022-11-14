@@ -7,6 +7,11 @@ object Dependencies {
         const val constraintLayout = "androidx.constraintlayout:constraintlayout:2.1.4"
     }
 
+    object Navigation{
+        const val navigationFragmentKtx = "androidx.navigation:navigation-fragment-ktx:2.5.3"
+        const val navigationUi = "androidx.navigation:navigation-ui-ktx:2.5.3"
+    }
+
     object Test {
         const val jUnit = "junit:junit:4.13.2"
         const val androidJUnit = "androidx.test.ext:junit:1.1.3"

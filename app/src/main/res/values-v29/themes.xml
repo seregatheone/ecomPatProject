@@ -14,5 +14,6 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
         <item name="android:forceDarkAllowed">false</item>
+        <item name="appBarLayoutStyle">@color/project_white</item>
     </style>
 </resources>

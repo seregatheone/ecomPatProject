@@ -18,3 +18,4 @@ listOf(
 ).forEach {
     include(it)
 }
+include(":feature:cart")

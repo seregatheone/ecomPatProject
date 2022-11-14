@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = Config.featureSplashScreenNameSpace
+    namespace = Config.featureCartNameSpace
     compileSdk = Config.compileSdkVersion
 
     defaultConfig {
@@ -33,6 +33,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures{
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -42,6 +45,8 @@ dependencies {
 
     implementation(project(":core:dagger"))
 
+    //viewBinding
+    implementation(Dependencies.ViewBinding.viewbindingpropertydelegate)
 
     //dagger
     implementation(Dependencies.Dagger.dagger)
@@ -51,6 +56,7 @@ dependencies {
     //android deps
     implementation(Dependencies.Android.coreKtx)
     implementation(Dependencies.Android.appCompat)
+    implementation(Dependencies.Android.material)
 
     //unit and android tests
     testImplementation(Dependencies.Test.jUnit)

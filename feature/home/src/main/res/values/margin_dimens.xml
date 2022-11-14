@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_search_view">30dp</dimen>
+    <dimen name="recycler_view_hot_sales">10dp</dimen>
+    <dimen name="margin_layout_hot_sales">16dp</dimen>
+
+    <dimen name="standard_margin">12dp</dimen>
+
+    <dimen name="favorite_icon_margin">12dp</dimen>
+</resources>

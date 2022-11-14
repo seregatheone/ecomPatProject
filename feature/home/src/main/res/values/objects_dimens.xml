@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="category_item_dimen">71dp</dimen>
+
+    <dimen name="max_item_width_height">40dp</dimen>
+
+    <dimen name="qr_code_shape_size">32dp</dimen>
+
+    <dimen name="search_view_width">300dp</dimen>
+    <dimen name="search_view_height">34dp</dimen>
+
+    <dimen name="hot_sales_card_height">200dp</dimen>
+    <dimen name="hot_sales_elem_corners">10dp</dimen>
+
+    <dimen name="favorite_icon_size">25dp</dimen>
+    <dimen name="favorite_picture_size">11dp</dimen>
+    <dimen name="best_seller_item_size">180dp</dimen>
+
+    <dimen name="best_seller_elem_corners">10dp</dimen>
+</resources>

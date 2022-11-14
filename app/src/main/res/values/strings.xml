@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ecomPatProject</string>
+    
+    <string name="cart">cart</string>
+    <string name="favorite">favorite</string>
+    <string name="profile">profile</string>
+
+    <string name="explorer">· Explorer</string>
 </resources>

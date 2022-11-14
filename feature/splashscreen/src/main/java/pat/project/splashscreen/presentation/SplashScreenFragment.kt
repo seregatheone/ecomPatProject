@@ -27,6 +27,7 @@ class SplashScreenFragment : Fragment(R.layout.splash_screen_fragment) {
     }
 
 
+
     override fun onAttach(context: Context) {
         DaggerSplashScreenComponent.builder()
             .splashScreenDeps(findDependencies())
@@ -41,10 +42,12 @@ class SplashScreenFragment : Fragment(R.layout.splash_screen_fragment) {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         val scope = CoroutineScope(Dispatchers.Main)
         scope.launch {
             simulateDataLoading()
         }.invokeOnCompletion {
+            requireActivity().actionBar?.show()
             navigate(navCommandProvider.toHome)
         }
         return super.onCreateView(inflater, container, savedInstanceState)

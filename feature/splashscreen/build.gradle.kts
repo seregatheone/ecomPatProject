@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = Config.featureSplashScreenNameSpace
+    namespace = NameSpaces.featureSplashScreenNameSpace
     compileSdk = Config.compileSdkVersion
 
     defaultConfig {

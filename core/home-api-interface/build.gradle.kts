@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = NameSpaces.coreDaggerAnnotationsNameSpace
+    namespace = NameSpaces.coreHomeApiInterfaceNameSpace
     compileSdk = Config.compileSdkVersion
 
     defaultConfig{
@@ -13,6 +13,5 @@ android {
     }
 }
 dependencies{
-    implementation(Dependencies.Dagger.dagger)
-    api(project(":core:dagger"))
+    implementation(Dependencies.Network.retrofit)
 }

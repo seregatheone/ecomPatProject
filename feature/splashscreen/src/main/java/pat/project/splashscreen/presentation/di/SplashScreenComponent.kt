@@ -7,7 +7,7 @@ import pat.project.splashscreen.presentation.SplashScreenFragment
 import pat.project.splashscreen.presentation.navigation.SplashNavCommandProvider
 
 @Component(modules = [SplashScreenModule::class], dependencies = [SplashScreenDeps::class])
-interface SplashScreenComponent {
+internal interface SplashScreenComponent {
     @Component.Builder
     interface Builder {
         fun splashScreenDeps(deps: SplashScreenDeps): Builder
@@ -18,7 +18,7 @@ interface SplashScreenComponent {
 }
 
 @Module
-class SplashScreenModule
+internal class SplashScreenModule
 
 interface SplashScreenDeps : Dependencies {
     val splashScreenNavigation: SplashNavCommandProvider

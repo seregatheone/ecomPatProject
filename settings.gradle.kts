@@ -19,3 +19,5 @@ listOf(
     include(it)
 }
 include(":feature:cart")
+include(":core:home-api")
+include(":core:home-api-interface")

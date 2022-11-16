@@ -41,6 +41,8 @@ dependencies {
     implementation(project(":core:dagger"))
     implementation(project(":core:dagger-annotations"))
 
+    implementation(project(":core:home-api"))
+
     implementation(project(":core:navigation"))
 
     implementation(project(":feature:splashscreen"))

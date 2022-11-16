@@ -4,9 +4,10 @@ import dagger.Component
 import dagger.Module
 import pat.project.dagger.Dependencies
 import pat.project.home.presentation.ui.HomeFragment
+import pat.project.home_api_interface.HomeApiService
 
 @Component(modules = [HomeModule::class], dependencies = [HomeDeps::class])
-interface HomeComponent {
+internal interface HomeComponent {
     @Component.Builder
     interface Builder {
         fun homeDeps(deps: HomeDeps): Builder
@@ -17,6 +18,8 @@ interface HomeComponent {
 }
 
 @Module
-class HomeModule
+internal class HomeModule
 
-interface HomeDeps : Dependencies
+interface HomeDeps : Dependencies{
+    val homeApiService : HomeApiService
+}

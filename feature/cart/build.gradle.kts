@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = Config.featureCartNameSpace
+    namespace = NameSpaces.featureCartNameSpace
     compileSdk = Config.compileSdkVersion
 
     defaultConfig {

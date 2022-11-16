@@ -63,12 +63,13 @@ dependencies {
     implementation(Dependencies.Android.material)
     implementation(Dependencies.Android.constraintLayout)
 
+    //navigation
+    implementation(Dependencies.Navigation.navigationFragmentKtx)
+    implementation(Dependencies.Navigation.navigationUi)
+
     //unit and android tests
     testImplementation(Dependencies.Test.jUnit)
     androidTestImplementation(Dependencies.Test.espresso)
     androidTestImplementation(Dependencies.Test.androidJUnit)
 
-    //navigation
-    implementation(Dependencies.Navigation.navigationFragmentKtx)
-    implementation(Dependencies.Navigation.navigationUi)
 }

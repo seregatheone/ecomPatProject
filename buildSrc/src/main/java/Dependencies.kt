@@ -39,4 +39,8 @@ object Dependencies {
         const val gsonConverterFactory = "com.squareup.retrofit2:converter-gson:$retrofitVersion"
     }
 
+    object KtxLibraries{
+        const val fragmentKtx = "androidx.fragment:fragment-ktx:1.5.4"
+    }
+
 }

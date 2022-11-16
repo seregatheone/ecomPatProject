@@ -21,3 +21,4 @@ listOf(
 include(":feature:cart")
 include(":core:home-api")
 include(":core:home-api-interface")
+include(":network-utils")

@@ -35,6 +35,7 @@ android {
 dependencies{
     api(project(":core:home-api-interface"))
 
+
     implementation(Dependencies.Network.retrofit)
     implementation(Dependencies.Network.gsonConverterFactory)
 

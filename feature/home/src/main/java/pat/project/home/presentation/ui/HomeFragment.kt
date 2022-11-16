@@ -17,6 +17,7 @@ class HomeFragment : Fragment(R.layout.fragment_home){
             .homeDeps(findDependencies())
             .build()
             .inject(this)
+
         super.onAttach(context)
     }
 

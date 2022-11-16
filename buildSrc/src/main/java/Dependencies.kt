@@ -33,4 +33,10 @@ object Dependencies {
         const val viewbindingpropertydelegate = "com.github.kirich1409:viewbindingpropertydelegate-noreflection:1.5.6"
     }
 
+    object Network{
+        private const val retrofitVersion = "2.9.0"
+        const val retrofit = "com.squareup.retrofit2:retrofit:$retrofitVersion"
+        const val gsonConverterFactory = "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    }
+
 }

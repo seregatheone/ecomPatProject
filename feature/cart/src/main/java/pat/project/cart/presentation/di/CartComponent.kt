@@ -5,7 +5,7 @@ import dagger.Module
 import pat.project.dagger.Dependencies
 
 @Component(modules = [CartModule::class], dependencies = [CartDeps::class])
-interface CartComponent {
+internal interface CartComponent {
     @Component.Builder
     interface Builder {
         fun cartDeps(deps: CartDeps): Builder
@@ -14,7 +14,7 @@ interface CartComponent {
 }
 
 @Module
-class CartModule
+internal class CartModule
 
 
 interface CartDeps : Dependencies

@@ -16,6 +16,8 @@
             <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/core/dagger" />
             <option value="$PROJECT_DIR$/core/dagger-annotations" />
+            <option value="$PROJECT_DIR$/core/home-api" />
+            <option value="$PROJECT_DIR$/core/home-api-interface" />
             <option value="$PROJECT_DIR$/core/navigation" />
             <option value="$PROJECT_DIR$/core/ui" />
             <option value="$PROJECT_DIR$/feature" />

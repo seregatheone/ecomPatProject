@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = Config.featureHomeNameSpace
+    namespace = NameSpaces.featureHomeNameSpace
     compileSdk = Config.compileSdkVersion
 
     defaultConfig {
@@ -42,6 +42,7 @@ dependencies {
     //project modules
     implementation(project(":core:ui"))
     implementation(project(":core:navigation"))
+    implementation(project(":core:home-api-interface"))
 
     implementation(project(":core:dagger"))
 

@@ -46,8 +46,14 @@ dependencies {
 
     implementation(project(":core:dagger"))
 
+    
+    implementation(project(":network-utils"))
+
     //viewBinding
     implementation(Dependencies.ViewBinding.viewbindingpropertydelegate)
+
+    //viewModels delegate
+    implementation(Dependencies.KtxLibraries.fragmentKtx)
 
     //dagger
     implementation(Dependencies.Dagger.dagger)
@@ -63,4 +69,5 @@ dependencies {
     testImplementation(Dependencies.Test.jUnit)
     androidTestImplementation(Dependencies.Test.espresso)
     androidTestImplementation(Dependencies.Test.androidJUnit)
+
 }

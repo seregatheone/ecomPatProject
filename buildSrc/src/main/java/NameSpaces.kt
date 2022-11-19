@@ -10,6 +10,7 @@ object NameSpaces {
     private const val coreNameSpace = "$appNameSpace.core"
 
     const val coreUiNameSpace = "$coreNameSpace.ui"
+    const val coreUiWidgetsNameSpace = "$coreNameSpace.ui_widgets"
     const val coreDaggerNameSpace = "$coreNameSpace.dagger"
     const val coreDaggerAnnotationsNameSpace = "$coreNameSpace.dagger_annotations"
     const val coreNavigationNameSpace = "$coreNameSpace.navigation"

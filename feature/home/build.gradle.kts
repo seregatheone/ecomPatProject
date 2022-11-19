@@ -45,8 +45,8 @@ dependencies {
     implementation(project(":core:home-api-interface"))
 
     implementation(project(":core:dagger"))
+    implementation(project(":core:ui-widgets"))
 
-    
     implementation(project(":network-utils"))
 
     //viewBinding
@@ -54,6 +54,10 @@ dependencies {
 
     //viewModels delegate
     implementation(Dependencies.KtxLibraries.fragmentKtx)
+
+    //glide
+    implementation(Dependencies.Glide.glideImageLoader)
+    kapt(Dependencies.Glide.glideAnnotationProcessor)
 
     //dagger
     implementation(Dependencies.Dagger.dagger)

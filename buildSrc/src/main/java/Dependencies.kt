@@ -43,4 +43,14 @@ object Dependencies {
         const val fragmentKtx = "androidx.fragment:fragment-ktx:1.5.4"
     }
 
+    object UiWidgets{
+        const val supportRecyclerview = "com.android.support:recyclerview-v7:28.0.0"
+    }
+
+    object Glide{
+        private const val glideVersion = "4.14.2"
+        const val glideImageLoader = "com.github.bumptech.glide:glide:$glideVersion"
+        const val glideAnnotationProcessor = "com.github.bumptech.glide:compiler:$glideVersion"
+    }
+
 }

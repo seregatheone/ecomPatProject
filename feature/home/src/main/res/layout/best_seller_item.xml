@@ -28,11 +28,24 @@
         android:contentDescription="@string/favorite_icon_placeholder" />
 
     <ImageView
-        android:id="@+id/favorite_icon_pic"
+        android:id="@+id/favorite_icon_boarder_pic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
         android:src="@drawable/favorite_border_icon"
+
+        app:layout_constraintBottom_toBottomOf="@id/favorite_icon_oval"
+        app:layout_constraintEnd_toEndOf="@id/favorite_icon_oval"
+        app:layout_constraintStart_toStartOf="@id/favorite_icon_oval"
+        app:layout_constraintTop_toTopOf="@id/favorite_icon_oval"
+        android:contentDescription="@string/favorite_icon" />
+
+    <ImageView
+        android:id="@+id/favorite_icon_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/favorite_icon"
 
         app:layout_constraintBottom_toBottomOf="@id/favorite_icon_oval"
         app:layout_constraintEnd_toEndOf="@id/favorite_icon_oval"

@@ -1,4 +1,4 @@
-package pat.project.home.presentation.ui
+package pat.project.home.presentation.ui.home
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

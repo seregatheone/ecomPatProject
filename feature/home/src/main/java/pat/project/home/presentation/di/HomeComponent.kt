@@ -4,7 +4,7 @@ import dagger.Component
 import dagger.Module
 import pat.project.dagger.Dependencies
 import pat.project.home.presentation.di.modules.HomeDataModule
-import pat.project.home.presentation.ui.HomeFragment
+import pat.project.home.presentation.ui.home.HomeFragment
 import pat.project.home_api_interface.HomeApiService
 
 @Component(modules = [HomeModule::class, HomeDataModule::class], dependencies = [HomeDeps::class])

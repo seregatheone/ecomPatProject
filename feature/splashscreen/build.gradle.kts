@@ -42,6 +42,8 @@ dependencies {
 
     implementation(project(":core:dagger"))
 
+    //constraint
+    implementation(Dependencies.Android.constraintLayout)
 
     //dagger
     implementation(Dependencies.Dagger.dagger)

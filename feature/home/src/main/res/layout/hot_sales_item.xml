@@ -3,12 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="@dimen/hot_sales_card_height"
-    android:layout_margin="10dp"
+    android:layout_marginVertical="10dp"
     app:cardCornerRadius="@dimen/hot_sales_elem_corners">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/hot_sales_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/new_item"
             android:layout_width="wrap_content"
@@ -76,16 +81,13 @@
         </LinearLayout>
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="24dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+
+            android:background="@drawable/button_background_shape"
+
             android:layout_margin="@dimen/margin_layout_hot_sales"
-
-            android:background="@color/white"
-
-            android:paddingHorizontal="@dimen/start_end_button_padding"
-            android:paddingVertical="@dimen/top_bottom_button_padding"
-
             style="@style/DeepBlue"
             android:text="@string/buy_now_string"
             android:textSize="@dimen/buy_now_text"

@@ -32,8 +32,9 @@
         android:text="@string/see_more_text" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/best_seller_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="500dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="@dimen/recycler_view_hot_sales"

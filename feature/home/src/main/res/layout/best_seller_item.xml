@@ -2,6 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="@dimen/best_seller_item_size"
+    android:paddingVertical="10dp"
+    android:background="@color/white"
     android:layout_height="wrap_content">
 
     <ImageView
@@ -28,9 +30,9 @@
         android:contentDescription="@string/favorite_icon_placeholder" />
 
     <ImageView
-        android:id="@+id/favorite_icon_pic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/favorite_icon_picture_bordered"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
 
         android:src="@drawable/favorite_border_icon"
 
@@ -39,6 +41,20 @@
         app:layout_constraintStart_toStartOf="@id/favorite_icon_oval"
         app:layout_constraintTop_toTopOf="@id/favorite_icon_oval"
         android:contentDescription="@string/favorite_icon" />
+
+    <ImageView
+        android:id="@+id/favorite_icon_picture_id"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+
+        android:src="@drawable/favorite_icon_drawable"
+
+        app:layout_constraintBottom_toBottomOf="@id/favorite_icon_oval"
+        app:layout_constraintEnd_toEndOf="@id/favorite_icon_oval"
+        app:layout_constraintStart_toStartOf="@id/favorite_icon_oval"
+        app:layout_constraintTop_toTopOf="@id/favorite_icon_oval"
+        android:contentDescription="@string/favorite_icon" />
+
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -62,7 +78,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
+            android:layout_marginStart="10dp"
+
             style="@style/Text"
+
+
+
             android:textSize="@dimen/price_without_sale"
             android:textColor="#CCCCCC"
             />

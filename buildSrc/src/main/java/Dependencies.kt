@@ -43,4 +43,10 @@ object Dependencies {
         const val fragmentKtx = "androidx.fragment:fragment-ktx:1.5.4"
     }
 
+    object Glide{
+        private const val glideVersion = "4.14.2"
+        const val glideImageLoader = "com.github.bumptech.glide:glide:$glideVersion"
+        const val glideAnnotationProcessor = "com.github.bumptech.glide:compiler:$glideVersion"
+    }
+
 }

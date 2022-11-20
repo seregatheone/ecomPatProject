@@ -46,7 +46,6 @@ dependencies {
 
     implementation(project(":core:dagger"))
 
-    
     implementation(project(":network-utils"))
 
     //viewBinding
@@ -54,6 +53,10 @@ dependencies {
 
     //viewModels delegate
     implementation(Dependencies.KtxLibraries.fragmentKtx)
+
+    //glide
+    implementation(Dependencies.Glide.glideImageLoader)
+    kapt(Dependencies.Glide.glideAnnotationProcessor)
 
     //dagger
     implementation(Dependencies.Dagger.dagger)
@@ -69,5 +72,4 @@ dependencies {
     testImplementation(Dependencies.Test.jUnit)
     androidTestImplementation(Dependencies.Test.espresso)
     androidTestImplementation(Dependencies.Test.androidJUnit)
-
 }

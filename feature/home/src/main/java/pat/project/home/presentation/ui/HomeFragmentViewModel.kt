@@ -3,15 +3,15 @@ package pat.project.home.presentation.ui
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
-import kotlinx.coroutines.flow.SharingStarted
-import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.flow.*
 import pat.project.home.data.HomeApiRepository
 import pat.project.network_utils.Resource
 import javax.inject.Inject
 import javax.inject.Provider
 
 class HomeFragmentViewModel(private val homeApiRepository: HomeApiRepository): ViewModel() {
+
+    val currentCategory = MutableStateFlow(0)
 
     fun getHomeResponseModel()= flow {
         try {

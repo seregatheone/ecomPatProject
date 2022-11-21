@@ -40,6 +40,7 @@
         android:id="@+id/icon_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/DeepBlue"
         android:layout_gravity="center_horizontal"
         android:textAlignment="center" />
 </LinearLayout>

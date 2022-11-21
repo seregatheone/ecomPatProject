@@ -1,4 +1,4 @@
-package pat.project.home.presentation.ui.adapters.category
+package pat.project.home.presentation.ui.home_fragment.adapters.category
 
 import android.annotation.SuppressLint
 import android.content.Context

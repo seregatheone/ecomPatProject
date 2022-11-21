@@ -11,3 +11,7 @@ android {
         targetSdk = Config.targetSdkVersion
     }
 }
+
+dependencies{
+    implementation(Dependencies.Android.material)
+}

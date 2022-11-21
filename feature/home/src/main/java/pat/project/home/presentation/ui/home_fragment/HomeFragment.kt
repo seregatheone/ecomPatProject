@@ -1,4 +1,4 @@
-package pat.project.home.presentation.ui
+package pat.project.home.presentation.ui.home_fragment
 
 import android.content.Context
 import android.os.Bundle
@@ -18,9 +18,10 @@ import pat.project.dagger.findDependencies
 import pat.project.ecompatproject.feature.home.R
 import pat.project.ecompatproject.feature.home.databinding.FragmentHomeBinding
 import pat.project.home.presentation.di.DaggerHomeComponent
-import pat.project.home.presentation.ui.adapters.BestSellerAdapter
-import pat.project.home.presentation.ui.adapters.HotSalesAdapter
-import pat.project.home.presentation.ui.adapters.category.CategoryAdapter
+import pat.project.home.presentation.ui.bottom_sheet_fragment.BottomSheetFragment
+import pat.project.home.presentation.ui.home_fragment.adapters.BestSellerAdapter
+import pat.project.home.presentation.ui.home_fragment.adapters.HotSalesAdapter
+import pat.project.home.presentation.ui.home_fragment.adapters.category.CategoryAdapter
 import pat.project.network_utils.Status
 import javax.inject.Inject
 
@@ -57,6 +58,11 @@ class HomeFragment : Fragment(R.layout.fragment_home){
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        viewBinding.locationFilterLayout.funnel.setOnClickListener{
+            BottomSheetFragment().show(childFragmentManager,"BottomSheetFragment")
+        }
+
+
         with(viewBinding.selectCategoryLayout.recyclerView){
             adapter = adapterCategory
             layoutManager = LinearLayoutManager(requireContext(),LinearLayoutManager.HORIZONTAL,false)

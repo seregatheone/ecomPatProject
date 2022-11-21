@@ -20,6 +20,9 @@ object NameSpaces {
     const val coreCartApiNameSpace = "$coreNameSpace.cart_api"
     const val coreCartApiInterfaceNameSpace = "$coreNameSpace.cart_api_interface"
 
+    const val coreProductDetailedApiNameSpace = "$coreNameSpace.product_detailed_api"
+    const val coreProductDetailedApiInterfaceNameSpace = "$coreNameSpace.product_detailed_api_interface"
+
     ///   features
     private const val featureNameSpace = "$appNameSpace.feature"
 

@@ -13,9 +13,9 @@ class BottomSheetFragment : BottomSheetDialogFragment(R.layout.fragment_bottom_s
 
     override fun getTheme() = R.style.AppBottomSheetDialogTheme
 
-    val brandList = listOf("Samsung", "Apple", "Xiaomi")
-    val priceList = listOf("\$300 - \$500", "\$500 - \$800", "\$800 - \$1000")
-    val sizeList = listOf("4.5 to 5.5 inches", "5.5 to 6.5 inches", "0 to 100 inches")
+    private val brandList = listOf("Samsung", "Apple", "Xiaomi")
+    private val priceList = listOf("\$300 - \$500", "\$500 - \$800", "\$800 - \$1000")
+    private val sizeList = listOf("4.5 to 5.5 inches", "5.5 to 6.5 inches", "0 to 100 inches")
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         with(viewBinding.brandSpinner)

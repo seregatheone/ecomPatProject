@@ -17,10 +17,12 @@ import pat.project.dagger.findDependencies
 import pat.project.ecompatproject.feature.home.R
 import pat.project.ecompatproject.feature.home.databinding.FragmentHomeBinding
 import pat.project.home.presentation.di.DaggerHomeComponent
+import pat.project.home.presentation.navigation.HomeNavCommandProvider
 import pat.project.home.presentation.ui.bottom_sheet_fragment.BottomSheetFragment
 import pat.project.home.presentation.ui.home_fragment.adapters.BestSellerAdapter
 import pat.project.home.presentation.ui.home_fragment.adapters.HotSalesAdapter
 import pat.project.home.presentation.ui.home_fragment.adapters.category.CategoryAdapter
+import pat.project.navigation.navigate
 import pat.project.network_utils.Status
 import javax.inject.Inject
 
@@ -35,6 +37,9 @@ class HomeFragment : Fragment(R.layout.fragment_home){
     @Inject
     lateinit var viewModelFactory : Lazy<HomeFragmentViewModel.Companion.HomeFragmentViewModelFactory>
     private val viewModel : HomeFragmentViewModel by viewModels{viewModelFactory.get()}
+
+    @Inject
+    lateinit var homeNavCommandProvider: HomeNavCommandProvider
 
     override fun onAttach(context: Context) {
         DaggerHomeComponent.builder()
@@ -52,7 +57,8 @@ class HomeFragment : Fragment(R.layout.fragment_home){
     ): View? {
         adapterCategory = CategoryAdapter(requireContext(),viewModel.currentCategory.value)
         adapterHotSales = HotSalesAdapter(requireContext())
-        adapterBestSeller = BestSellerAdapter(requireContext())
+        adapterBestSeller = BestSellerAdapter(requireContext()
+        ) { navigate(homeNavCommandProvider.toProductDetailed) }
         return super.onCreateView(inflater, container, savedInstanceState)
     }
 

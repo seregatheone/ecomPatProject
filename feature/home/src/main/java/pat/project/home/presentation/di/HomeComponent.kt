@@ -4,6 +4,7 @@ import dagger.Component
 import dagger.Module
 import pat.project.dagger.Dependencies
 import pat.project.home.presentation.di.modules.HomeDataModule
+import pat.project.home.presentation.navigation.HomeNavCommandProvider
 import pat.project.home.presentation.ui.home_fragment.HomeFragment
 import pat.project.home_api_interface.HomeApiService
 
@@ -22,5 +23,6 @@ internal interface HomeComponent {
 internal class HomeModule
 
 interface HomeDeps : Dependencies{
+    val homeNavCommandProvider : HomeNavCommandProvider
     val homeApiService : HomeApiService
 }

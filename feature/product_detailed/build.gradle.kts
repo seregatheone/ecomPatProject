@@ -1,19 +1,16 @@
 plugins {
-    id("com.android.application")
+    id("com.android.library")
     kotlin("android")
     id("kotlin-kapt")
 }
 
 android {
-    namespace = Config.appNameSpace
+    namespace = NameSpaces.featureProductDetailedNameSpace
     compileSdk = Config.compileSdkVersion
 
     defaultConfig {
-        applicationId = Config.appNameSpace
         minSdk = Config.minSdkVersion
         targetSdk = Config.targetSdkVersion
-        versionCode = Config.versionCode
-        versionName = Config.versionName
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -21,7 +18,12 @@ android {
     buildTypes {
         named("release") {
             isMinifyEnabled = false
-            setProguardFiles(listOf(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"))
+            setProguardFiles(
+                listOf(
+                    getDefaultProguardFile("proguard-android-optimize.txt"),
+                    "proguard-rules.pro"
+                )
+            )
         }
     }
     compileOptions {
@@ -38,20 +40,20 @@ android {
 
 dependencies {
     //project modules
-    implementation(project(":core:dagger"))
-    implementation(project(":core:dagger-annotations"))
-
-    implementation(project(":core:home-api"))
-
+    implementation(project(":core:ui"))
     implementation(project(":core:navigation"))
 
-    implementation(project(":feature:splashscreen"))
-    implementation(project(":feature:home"))
-    implementation(project(":feature:cart"))
-    implementation(project(":feature:product_detailed"))
+    implementation(project(":core:dagger"))
 
     //viewBinding
     implementation(Dependencies.ViewBinding.viewbindingpropertydelegate)
+
+    //viewModels delegate
+    implementation(Dependencies.KtxLibraries.fragmentKtx)
+
+    //glide
+    implementation(Dependencies.Glide.glideImageLoader)
+    kapt(Dependencies.Glide.glideAnnotationProcessor)
 
     //dagger
     implementation(Dependencies.Dagger.dagger)
@@ -62,15 +64,9 @@ dependencies {
     implementation(Dependencies.Android.coreKtx)
     implementation(Dependencies.Android.appCompat)
     implementation(Dependencies.Android.material)
-    implementation(Dependencies.Android.constraintLayout)
-
-    //navigation
-    implementation(Dependencies.Navigation.navigationFragmentKtx)
-    implementation(Dependencies.Navigation.navigationUi)
 
     //unit and android tests
     testImplementation(Dependencies.Test.jUnit)
     androidTestImplementation(Dependencies.Test.espresso)
     androidTestImplementation(Dependencies.Test.androidJUnit)
-
 }

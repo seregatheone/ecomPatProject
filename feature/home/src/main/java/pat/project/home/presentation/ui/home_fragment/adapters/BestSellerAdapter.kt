@@ -11,7 +11,7 @@ import com.bumptech.glide.Glide
 import pat.project.ecompatproject.feature.home.databinding.BestSellerItemBinding
 import pat.project.home_api_interface.models.BestSeller
 
-class BestSellerAdapter(private val parentContext: Context) : RecyclerView.Adapter<BestSellerAdapter.BestSellerViewHolder>() {
+class BestSellerAdapter(private val parentContext: Context, private val navigateToProductInfo :() -> Unit) : RecyclerView.Adapter<BestSellerAdapter.BestSellerViewHolder>() {
 
     private var allData: List<BestSeller> = emptyList()
 
@@ -20,6 +20,10 @@ class BestSellerAdapter(private val parentContext: Context) : RecyclerView.Adapt
     ) : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(item: BestSeller) {
+            binding.bestSellerLayout.setOnClickListener {
+                navigateToProductInfo()
+            }
+
             binding.priceWith.text = item.discount_price.toString()
             binding.priceWithout.paintFlags = binding.priceWithout.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
             binding.priceWithout.text = item.price_without_discount.toString()

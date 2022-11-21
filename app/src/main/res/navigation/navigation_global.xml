@@ -25,6 +25,9 @@
         <action
             android:id="@+id/action_homeFragment_to_cartFragment"
             app:destination="@id/cartFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_productDetailedFragment"
+            app:destination="@id/productDetailedFragment" />
     </fragment>
     <fragment
         android:id="@+id/cartFragment"
@@ -41,8 +44,15 @@
 
     <action android:id="@+id/action_feature_home"
         app:destination="@+id/homeFragment"/>
-
-
+    <fragment
+        android:id="@+id/productDetailedFragment"
+        android:name="pat.project.product_detailed.presentation.ui.ProductDetailedFragment"
+        android:label="fragment_product_detailed"
+        tools:layout="@layout/fragment_product_detailed" >
+        <action
+            android:id="@+id/action_productDetailedFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
 
 
 </navigation>

@@ -36,5 +36,13 @@
             app:destination="@id/homeFragment" />
     </fragment>
 
+    <action android:id="@+id/action_feature_cart"
+        app:destination="@+id/cartFragment"/>
+
+    <action android:id="@+id/action_feature_home"
+        app:destination="@+id/homeFragment"/>
+
+
+
 
 </navigation>

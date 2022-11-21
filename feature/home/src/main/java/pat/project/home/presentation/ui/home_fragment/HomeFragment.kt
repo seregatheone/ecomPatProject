@@ -2,7 +2,6 @@ package pat.project.home.presentation.ui.home_fragment
 
 import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -85,10 +84,8 @@ class HomeFragment : Fragment(R.layout.fragment_home){
                         adapterHotSales!!.setData(resource.data!!.home_store)
                     }
                     Status.ERROR -> {
-                        Log.i("resourceERROR",resource.data.toString())
                     }
                     Status.LOADING -> {
-                        Log.i("resourceLOADING",resource.data.toString())
                     }
                 }
             }

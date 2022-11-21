@@ -3,7 +3,6 @@ package pat.project.home.presentation.ui.home_fragment.adapters
 import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Paint
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -24,7 +23,6 @@ class BestSellerAdapter(private val parentContext: Context) : RecyclerView.Adapt
             binding.priceWith.text = item.discount_price.toString()
             binding.priceWithout.paintFlags = binding.priceWithout.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
             binding.priceWithout.text = item.price_without_discount.toString()
-            Log.i("is_favorites",item.is_favorites.toString())
             when (item.is_favorites) {
                 true -> binding.favoriteIconPictureId.visibility = View.VISIBLE
                 false -> binding.favoriteIconPictureId.visibility = View.GONE

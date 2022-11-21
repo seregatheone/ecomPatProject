@@ -9,5 +9,15 @@
     <style name="Orange" parent="Text">
         <item name="android:textColor">@color/project_orange</item>
     </style>
+    
+    <style name="OrangeStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/project_orange</item>
+        <item name="cardCornerRadius">@dimen/cards_corners_size</item>
+    </style>
+
+    <style name="DarkBlueStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/project_deep_blue</item>
+        <item name="cardCornerRadius">@dimen/cards_corners_size</item>
+    </style>
 
 </resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_background">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/close"
+        android:layout_width="37dp"
+
+        android:layout_height="37dp"
+
+        android:layout_marginTop="24dp"
+
+        style="@style/DarkBlueStyle"
+
+        app:layout_constraintEnd_toStartOf="@+id/filter_options"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:src="@drawable/clear_icon" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/filter_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/filter_options"
+        android:textStyle="bold"
+        android:textColor="@color/project_deep_blue"
+        android:textSize="18sp"
+
+        app:layout_constraintEnd_toStartOf="@+id/done"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/close"
+        app:layout_constraintTop_toTopOf="@+id/close"
+        app:layout_constraintBottom_toBottomOf="@+id/close"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/done"
+        android:layout_width="86dp"
+
+        android:layout_height="37dp"
+
+        android:layout_marginTop="24dp"
+
+        style="@style/OrangeStyle"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/filter_options"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:text="@string/done"
+            android:textStyle="bold"
+            android:textSize="18sp"
+
+            android:textColor="@color/white" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/brand"
+
+        android:layout_marginTop="30dp"
+
+        style="@style/DeepBlue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toBottomOf="@+id/close"
+        app:layout_constraintStart_toStartOf="@id/close"
+        />
+
+    <Spinner
+        android:id="@+id/brand_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/brand"
+
+        app:layout_constraintStart_toStartOf="@id/close"
+        app:layout_constraintEnd_toEndOf="@id/done"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/brand_spinner"
+
+        style="@style/DeepBlue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="@id/close"
+        />
+
+    <Spinner
+        android:id="@+id/price_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/price"
+
+        app:layout_constraintStart_toStartOf="@id/close"
+        app:layout_constraintEnd_toEndOf="@id/done"
+        />
+
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/size"
+
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/price_spinner"
+
+        style="@style/DeepBlue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="@id/close"
+        />
+
+    <Spinner
+        android:id="@+id/size_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/size"
+
+        app:layout_constraintStart_toStartOf="@id/close"
+        app:layout_constraintEnd_toEndOf="@id/done"
+
+        android:paddingBottom="30dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

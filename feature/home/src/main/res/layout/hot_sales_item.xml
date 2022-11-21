@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/hot_sales_card_height"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="@dimen/hot_sales_elem_corners">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/hot_sales_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/new_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:visibility="gone"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:id="@+id/new_item_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/new_icon_hot_sales"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/hot_sales_icon" />
+
+            <TextView
+                style="@style/Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/new_text_dimen"
+
+                app:layout_constraintBottom_toBottomOf="@+id/new_item_shape"
+                app:layout_constraintEnd_toEndOf="@+id/new_item_shape"
+                app:layout_constraintStart_toStartOf="@+id/new_item_shape"
+                app:layout_constraintTop_toTopOf="@+id/new_item_shape" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+
+            android:orientation="vertical"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+            <TextView
+                android:id="@+id/title_hot_sales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                style="@style/Text"
+                android:textSize="@dimen/title_hot_sales"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+
+                />
+            <TextView
+                android:id="@+id/description_hot_sales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                style="@style/Text"
+                android:textSize="@dimen/description_hot_sales"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            android:background="@drawable/button_background_shape"
+
+            android:layout_margin="@dimen/margin_layout_hot_sales"
+            style="@style/DeepBlue"
+            android:text="@string/buy_now_string"
+            android:textSize="@dimen/buy_now_text"
+            android:textStyle="bold"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

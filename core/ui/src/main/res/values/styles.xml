@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Text">
+        <item name="android:fontFamily">@font/font_family</item>
+    </style>
+    <style name="DeepBlue" parent="Text">
+        <item name="android:textColor">@color/project_deep_blue</item>
+    </style>
+    <style name="Orange" parent="Text">
+        <item name="android:textColor">@color/project_orange</item>
+    </style>
+    
+    <style name="OrangeStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/project_orange</item>
+        <item name="cardCornerRadius">@dimen/cards_corners_size</item>
+    </style>
+
+    <style name="DarkBlueStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/project_deep_blue</item>
+        <item name="cardCornerRadius">@dimen/cards_corners_size</item>
+    </style>
+
+</resources>

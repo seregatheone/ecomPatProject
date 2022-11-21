@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/hot_sales_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        style = "@style/DeepBlue"
+        android:textStyle="bold"
+        android:textSize="@dimen/hot_sales_dimen"
+        android:text="@string/hot_sales_text" />
+
+    <TextView
+        android:id="@+id/see_more_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        style="@style/Orange"
+        android:textSize="@dimen/see_more_dimen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/hot_sales_textview"
+
+        android:text="@string/see_more_text" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/hot_sales_rec_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/recycler_view_hot_sales"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hot_sales_textview"
+
+        tools:itemCount="1"
+        tools:listitem="@layout/hot_sales_item" />
+</androidx.constraintlayout.widget.ConstraintLayout>

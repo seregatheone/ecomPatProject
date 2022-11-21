@@ -1,0 +1,51 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin = "8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".HomeScreenFragment"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/locationFilterLayout"
+            layout="@layout/location_funnel_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/standard_margin"/>
+
+        <include
+            android:id="@+id/selectCategoryLayout"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            layout="@layout/category_layout"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/standard_margin"/>
+
+        <include
+            android:id="@+id/searchQrLayout"
+            layout="@layout/search_qr_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <include
+            android:id="@+id/hotSalesLayout"
+            layout="@layout/hot_sales_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/standard_margin"/>
+
+        <include
+            android:id="@+id/best_seller_layout"
+            layout="@layout/best_seller_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="search_text_dimen">12sp</dimen>
+    <dimen name="hot_sales_dimen">25sp</dimen>
+    <dimen name="see_more_dimen">15sp</dimen>
+    <dimen name="new_text_dimen">10sp</dimen>
+    <dimen name="buy_now_text">11sp</dimen>
+    <dimen name="title_hot_sales">25sp</dimen>
+    <dimen name="description_hot_sales">11sp</dimen>
+    <dimen name="price_with_sale">16sp</dimen>
+    <dimen name="price_without_sale">10sp</dimen>
+    <dimen name="best_seller_title_text">10sp</dimen>
+</resources>

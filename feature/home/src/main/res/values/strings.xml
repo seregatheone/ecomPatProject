@@ -1,0 +1,25 @@
+<resources>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_category">Select Category</string>
+    <string name="view_all">view all</string>
+    <string name="search_string">Search</string>
+    <string name="hot_sales_text">Hot sales</string>
+    <string name="see_more_text">see more</string>
+    <string name="buy_now_string">Buy now!</string>
+    <string name="best_seller_string">Best seller</string>
+    <string name="zihuatanejo_gro">Zihuatanejo, Gro</string>
+    <string name="new_name">New</string>
+    <string name="search_view">Search View</string>
+    <string name="magnifier">Magnifier</string>
+    <string name="find_qr_code">Find QR code</string>
+    <string name="qr_code">QR code</string>
+    <string name="best_seller">Best Seller</string>
+    <string name="favorite_icon_placeholder">Favorite icon placeholder</string>
+    <string name="favorite_icon">Favorite icon</string>
+    <string name="category_menu">category menu</string>
+    <string name="category_icon">category icon</string>
+    <string name="geo_tag">geo tag</string>
+    <string name="arrow_navigate_back">arrow navigate back</string>
+    <string name="filter_cost">filter cost</string>
+    <string name="hot_sales_icon">hot sales icon</string>
+</resources>

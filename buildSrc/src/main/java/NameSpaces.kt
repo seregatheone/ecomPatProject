@@ -22,4 +22,5 @@ object NameSpaces {
     const val featureSplashScreenNameSpace = "$featureNameSpace.splashscreen"
     const val featureHomeNameSpace = "$featureNameSpace.home"
     const val featureCartNameSpace = "$featureNameSpace.cart"
+    const val featureProductDetailedNameSpace = "$featureNameSpace.product_detailed"
 }

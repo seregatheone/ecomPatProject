@@ -1,3 +1,7 @@
 package pat.project.home.presentation.navigation
 
-interface HomeNavCommandProvider
+import pat.project.navigation.NavCommand
+
+interface HomeNavCommandProvider{
+    val toProductDetailed : NavCommand
+}

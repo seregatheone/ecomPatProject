@@ -20,21 +20,21 @@ class BottomSheetFragment : BottomSheetDialogFragment(R.layout.fragment_bottom_s
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         with(viewBinding.brandSpinner)
         {
-            adapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, brandList)
+            adapter = ArrayAdapter(requireContext(), R.layout.spinner_item_layout, brandList)
             setSelection(0, false)
             prompt = "Select brand"
 
         }
         with(viewBinding.priceSpinner)
         {
-            adapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, priceList)
+            adapter = ArrayAdapter(requireContext(), R.layout.spinner_item_layout, priceList)
             setSelection(0, false)
             prompt = "Select price"
 
         }
         with(viewBinding.sizeSpinner)
         {
-            adapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, sizeList)
+            adapter = ArrayAdapter(requireContext(), R.layout.spinner_item_layout, sizeList)
             setSelection(0, false)
             prompt = "Select size"
 

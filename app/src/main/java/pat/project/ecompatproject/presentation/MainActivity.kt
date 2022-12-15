@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main){
         navController.addOnDestinationChangedListener { _, destination, _ ->
             when(destination.id){
                 R.id.splashScreenFragment-> viewBinding.bottomNavigation.visibility = View.GONE
-                R.id.cart -> viewBinding.bottomNavigation.visibility = View.GONE
+                R.id.cartFragment -> viewBinding.bottomNavigation.visibility = View.GONE
                 else -> viewBinding.bottomNavigation.visibility = View.VISIBLE
             }
         }

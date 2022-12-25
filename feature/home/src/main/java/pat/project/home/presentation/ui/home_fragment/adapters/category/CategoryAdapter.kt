@@ -42,10 +42,12 @@ class CategoryAdapter(private val parentContext : Context, private val currentAc
                 true -> {
                     binding.iconTextView.setTextColor(Color.parseColor("#FF6E4E"))
                     binding.iconImageView.setBackgroundResource(R.drawable.category_shape_active)
+                    binding.imageView.setColorFilter(Color.parseColor("#ffffff"))
                 }
                 false -> {
                     binding.iconTextView.setTextColor(Color.parseColor("#010035"))
                     binding.iconImageView.setBackgroundResource(R.drawable.category_shape)
+                    binding.imageView.colorFilter = null
                 }
             }
 

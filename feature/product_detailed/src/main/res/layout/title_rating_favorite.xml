@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        style="@style/DeepBlue"
+        android:textSize="24sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/close"
+        style="@style/DarkBlueStyle"
+
+        android:layout_width="37dp"
+
+        android:layout_height="37dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:src="@drawable/favorite_white_icon" />
+
+        <ImageView
+            android:id="@+id/favorite_icon_active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:visibility="gone"
+
+            android:src="@drawable/favorite_active_icon" />
+
+    </androidx.cardview.widget.CardView>
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="6dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,11 +10,9 @@
         android:name="pat.project.splashscreen.presentation.SplashScreenFragment"
         android:label="SplashScreenFragment" >
         <action
-            android:id="@+id/action_splashScreenFragment_to_homeFragment"
-            app:destination="@id/homeFragment"
-
-            app:popUpTo="@+id/homeFragment"
-            app:popUpToInclusive="true" />
+            android:id="@+id/action_splashScreenFragment_to_authFragment"
+            app:popUpTo="@id/authFragment"
+            app:destination="@id/authFragment" />
     </fragment>
 
     <fragment
@@ -44,6 +42,10 @@
 
     <action android:id="@+id/action_feature_home"
         app:destination="@+id/homeFragment"/>
+
+    <action android:id="@+id/action_feature_auth"
+        app:destination="@+id/authFragment"/>
+
     <fragment
         android:id="@+id/productDetailedFragment"
         android:name="pat.project.product_detailed.presentation.ui.ProductDetailedFragment"
@@ -52,6 +54,15 @@
         <action
             android:id="@+id/action_productDetailedFragment_to_cartFragment"
             app:destination="@id/cartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="pat.project.auth.presentation.ui.AuthFragment"
+        android:label="AuthFragment" >
+        <action
+            android:id="@+id/action_authFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"/>
     </fragment>
 
 

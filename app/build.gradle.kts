@@ -49,6 +49,7 @@ dependencies {
     implementation(project(":feature:home"))
     implementation(project(":feature:cart"))
     implementation(project(":feature:product_detailed"))
+    implementation(project(":feature:auth"))
 
     //viewBinding
     implementation(Dependencies.ViewBinding.viewbindingpropertydelegate)

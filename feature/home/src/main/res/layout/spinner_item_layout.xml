@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="end"
-    android:padding="15dp"
+    android:padding="6dp"
     android:textAlignment="gravity"
     android:textColor="@color/project_deep_blue"
-    android:textSize="16sp"
+    android:textSize="20sp"
     />

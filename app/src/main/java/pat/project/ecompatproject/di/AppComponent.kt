@@ -4,6 +4,7 @@ import android.app.Application
 import dagger.BindsInstance
 import dagger.Component
 import dagger.Module
+import pat.project.auth.presentation.di.AuthDeps
 import pat.project.cart.presentation.di.CartDeps
 import pat.project.ecompatproject.ProjectApplication
 import pat.project.ecompatproject.di.feature_deps.FeatureDepsModules
@@ -13,13 +14,12 @@ import pat.project.home.presentation.di.HomeDeps
 import pat.project.splashscreen.presentation.di.SplashScreenDeps
 
 @Component(modules = [AppModule::class, FeatureDepsModules::class, AppApiModules::class])
-interface AppComponent : SplashScreenDeps, HomeDeps, CartDeps, MainActivityDeps {
+interface AppComponent : SplashScreenDeps, HomeDeps, CartDeps, MainActivityDeps,AuthDeps{
 
     @Component.Builder
     interface Builder {
         @BindsInstance
         fun application(application: Application): Builder
-
         fun build(): AppComponent
     }
 

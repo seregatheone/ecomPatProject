@@ -6,5 +6,6 @@ import pat.project.splashscreen.presentation.navigation.SplashNavCommandProvider
 import javax.inject.Inject
 
 class SplashNavCommandProviderImpl @Inject constructor() : SplashNavCommandProvider{
-    override val toHome: NavCommand = NavCommand(R.id.action_splashScreenFragment_to_homeFragment)
+    override val toAuth: NavCommand =
+        NavCommand(R.id.action_splashScreenFragment_to_authFragment)
 }

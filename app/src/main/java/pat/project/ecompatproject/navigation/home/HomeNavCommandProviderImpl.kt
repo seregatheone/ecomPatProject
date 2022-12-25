@@ -6,5 +6,5 @@ import pat.project.navigation.NavCommand
 import javax.inject.Inject
 
 class HomeNavCommandProviderImpl @Inject constructor() : HomeNavCommandProvider{
-    override val toProductDetailed: NavCommand = NavCommand(R.id.action_homeFragment_to_productDetailedFragment)
+    override val toProductDetailed: NavCommand = NavCommand(action = R.id.action_homeFragment_to_productDetailedFragment)
 }

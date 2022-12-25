@@ -46,7 +46,9 @@ class SplashScreenFragment : Fragment(R.layout.splash_screen_fragment) {
             simulateDataLoading()
         }.invokeOnCompletion {
             requireActivity().actionBar?.show()
-            navigate(navCommandProvider.toHome)
+
+            navigate(navCommandProvider.toAuth)
+
         }
         return super.onCreateView(inflater, container, savedInstanceState)
     }

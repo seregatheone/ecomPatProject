@@ -8,6 +8,6 @@ import javax.inject.Inject
 class AuthNavCommandProviderImpl @Inject constructor(
 
 ) : AuthNavCommandProvider{
-    override val toLoginScreen: NavCommand = NavCommand(R.id.action_authFragment_to_homeFragment)
-    override val toAuthScreen: NavCommand = NavCommand(R.id.action_authFragment_to_homeFragment)
+    override val toLoginScreen: NavCommand = NavCommand(R.id.action_authFragment_to_loginFragment2)
+    override val toSignUpScreen: NavCommand = NavCommand(R.id.action_authFragment_to_signUpFragment)
 }

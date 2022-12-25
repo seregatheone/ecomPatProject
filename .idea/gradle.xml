@@ -28,7 +28,9 @@
             <option value="$PROJECT_DIR$/feature/auth" />
             <option value="$PROJECT_DIR$/feature/cart" />
             <option value="$PROJECT_DIR$/feature/home" />
+            <option value="$PROJECT_DIR$/feature/login" />
             <option value="$PROJECT_DIR$/feature/product_detailed" />
+            <option value="$PROJECT_DIR$/feature/signup" />
             <option value="$PROJECT_DIR$/feature/splashscreen" />
             <option value="$PROJECT_DIR$/network-utils" />
           </set>

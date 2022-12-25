@@ -10,6 +10,7 @@ import pat.project.auth.presentation.navigation.AuthNavCommandProvider
 import pat.project.dagger.findDependencies
 import pat.project.ecompatproject.feature.auth.R
 import pat.project.ecompatproject.feature.auth.databinding.FragmentAuthBinding
+import pat.project.navigation.navigate
 import javax.inject.Inject
 
 
@@ -29,7 +30,12 @@ class AuthFragment : Fragment(R.layout.fragment_auth) {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-
+        viewBinding.login.setOnClickListener{
+            navigate(authNavCommandProvider.toLoginScreen)
+        }
+        viewBinding.registration.setOnClickListener{
+            navigate(authNavCommandProvider.toSignUpScreen)
+        }
         super.onViewCreated(view, savedInstanceState)
     }
 }

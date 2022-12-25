@@ -30,5 +30,7 @@ object NameSpaces {
     const val featureHomeNameSpace = "$featureNameSpace.home"
     const val featureCartNameSpace = "$featureNameSpace.cart"
     const val featureAuthNameSpace = "$featureNameSpace.auth"
+    const val featureLoginNameSpace = "$featureNameSpace.login"
+    const val featureSignUpNameSpace = "$featureNameSpace.signup"
     const val featureProductDetailedNameSpace = "$featureNameSpace.product_detailed"
 }

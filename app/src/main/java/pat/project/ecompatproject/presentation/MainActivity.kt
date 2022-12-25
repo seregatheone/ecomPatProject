@@ -40,6 +40,9 @@ class MainActivity : AppCompatActivity(R.layout.activity_main){
             when(destination.id){
                 R.id.splashScreenFragment-> viewBinding.bottomNavigation.visibility = View.GONE
                 R.id.cartFragment -> viewBinding.bottomNavigation.visibility = View.GONE
+                R.id.authFragment -> viewBinding.bottomNavigation.visibility = View.GONE
+                R.id.loginFragment2 -> viewBinding.bottomNavigation.visibility = View.GONE
+                R.id.signUpFragment -> viewBinding.bottomNavigation.visibility = View.GONE
                 else -> viewBinding.bottomNavigation.visibility = View.VISIBLE
             }
         }

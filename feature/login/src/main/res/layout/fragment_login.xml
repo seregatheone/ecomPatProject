@@ -2,23 +2,81 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/to_home"
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_text_input"
+        style="@style/InputTextBoxStyle"
+        android:layout_width="0dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="20dp"
+
         android:layout_height="wrap_content"
 
-        android:background="@color/project_orange"
-        android:textStyle="bold"
-        android:textColor="@color/project_deep_blue"
-        android:text="toHome"
+        app:hintTextAppearance="@style/HintTextAppearance"
+        app:layout_constraintBottom_toTopOf="@+id/password_text_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:autofillHints="emailAddress"
+
+            android:hint="Введите свою почту"
+
+            android:inputType="text"
+            android:textColor="@color/project_deep_blue"
+            android:textSize="16sp"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_text_input"
+        style="@style/InputTextBoxStyle"
+        android:layout_width="0dp"
+        android:layout_marginHorizontal="30dp"
+
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/HintTextAppearance"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:autofillHints="emailAddress"
+
+            android:hint="Введите свой пароль"
+
+            android:inputType="text"
+            android:textColor="@color/project_deep_blue"
+            android:textSize="16sp"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/project_orange"
+        android:padding="8dp"
+        android:layout_marginTop="20dp"
+        android:text="LOGIN"
+        android:textColor="@color/project_deep_blue"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_text_input" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

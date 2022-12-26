@@ -42,14 +42,20 @@ dependencies {
     //project modules
     implementation(project(":core:ui"))
     implementation(project(":core:navigation"))
+    implementation(project(":core:login-api-interface"))
 
     implementation(project(":core:dagger"))
 
+    implementation(project(":network-utils"))
     //viewBinding
     implementation(Dependencies.ViewBinding.viewbindingpropertydelegate)
 
+    //viewModels delegate
+    implementation(Dependencies.KtxLibraries.fragmentKtx)
+
     //dagger
     implementation(Dependencies.Dagger.dagger)
+
     kapt(Dependencies.Dagger.daggerCompiler)
     kapt(Dependencies.Dagger.daggerAndroidProcessor)
 

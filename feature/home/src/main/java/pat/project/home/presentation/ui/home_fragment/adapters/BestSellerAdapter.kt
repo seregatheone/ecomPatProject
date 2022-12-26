@@ -9,32 +9,32 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import pat.project.ecompatproject.feature.home.databinding.BestSellerItemBinding
-import pat.project.home_api_interface.models.BestSeller
+import pat.project.home_api_interface.backmodels.Products
 
 class BestSellerAdapter(private val parentContext: Context, private val navigateToProductInfo :() -> Unit) : RecyclerView.Adapter<BestSellerAdapter.BestSellerViewHolder>() {
 
-    private var allData: List<BestSeller> = emptyList()
+    private var allData: List<Products> = emptyList()
 
     inner class BestSellerViewHolder(
         private val binding: BestSellerItemBinding
     ) : RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(item: BestSeller) {
+        fun bind(item: Products) {
             binding.bestSellerLayout.setOnClickListener {
                 navigateToProductInfo()
             }
 
-            binding.priceWith.text = item.discount_price.toString()
+            binding.priceWith.text = item.priceDiscount.toString()
             binding.priceWithout.paintFlags = binding.priceWithout.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
-            binding.priceWithout.text = item.price_without_discount.toString()
-            when (item.is_favorites) {
-                true -> binding.favoriteIconPictureId.visibility = View.VISIBLE
-                false -> binding.favoriteIconPictureId.visibility = View.GONE
-            }
+            binding.priceWithout.text = item.price.toString()
+//            when (item.) {
+//                true -> binding.favoriteIconPictureId.visibility = View.VISIBLE
+//                false -> binding.favoriteIconPictureId.visibility = View.GONE
+//            }
             binding.name.text = item.title
 
             Glide.with(parentContext)
-                .load(item.picture)
+                .load("https://shop.gadgetufa.ru/images/upload/52534-smartfon-samsung-galaxy-s20-ultra-12-128-chernyj_1024.jpg")
                 .into(binding.bestSellerPicture)
         }
     }
@@ -53,7 +53,7 @@ class BestSellerAdapter(private val parentContext: Context, private val navigate
     override fun getItemCount(): Int = allData.size
 
     @SuppressLint("NotifyDataSetChanged")
-    fun setData(listOfBestSellers : List<BestSeller>){
+    fun setData(listOfBestSellers : List<Products>){
         allData = listOfBestSellers
         notifyDataSetChanged()
     }

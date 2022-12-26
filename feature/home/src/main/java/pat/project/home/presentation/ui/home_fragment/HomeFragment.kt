@@ -86,8 +86,8 @@ class HomeFragment : Fragment(R.layout.fragment_home){
             viewModel.getHomeResponseModel().collect{ resource ->
                 when(resource.status){
                     Status.SUCCESS -> {
-                        adapterBestSeller!!.setData(resource.data!!.best_seller)
-                        adapterHotSales!!.setData(resource.data!!.home_store)
+                        adapterBestSeller!!.setData(resource.data!!.products)
+                        adapterHotSales!!.setData(resource.data!!.products)
                     }
                     Status.ERROR -> {
                     }

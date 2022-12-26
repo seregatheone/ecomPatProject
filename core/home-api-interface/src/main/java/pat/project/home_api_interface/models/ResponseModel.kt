@@ -1,6 +1,7 @@
 package pat.project.home_api_interface.models
 
+import pat.project.home_api_interface.backmodels.Products
+
 data class ResponseModel(
-    val best_seller: List<BestSeller>,
-    val home_store: List<HomeStore>
+    val products: List<Products>
 )

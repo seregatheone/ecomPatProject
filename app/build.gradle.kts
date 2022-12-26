@@ -42,6 +42,7 @@ dependencies {
     implementation(project(":core:dagger-annotations"))
 
     implementation(project(":core:home-api"))
+    implementation(project(":core:login-api"))
 
     implementation(project(":core:navigation"))
 

@@ -20,6 +20,8 @@
             <option value="$PROJECT_DIR$/core/dagger-annotations" />
             <option value="$PROJECT_DIR$/core/home-api" />
             <option value="$PROJECT_DIR$/core/home-api-interface" />
+            <option value="$PROJECT_DIR$/core/login-api" />
+            <option value="$PROJECT_DIR$/core/login-api-interface" />
             <option value="$PROJECT_DIR$/core/navigation" />
             <option value="$PROJECT_DIR$/core/product-detailed-api" />
             <option value="$PROJECT_DIR$/core/product-detailed-api-interface" />

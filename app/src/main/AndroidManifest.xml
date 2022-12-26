@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
+
     <application
         android:name=".ProjectApplication"
         android:allowBackup="true"
@@ -14,7 +15,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EcomPatProject"
-        tools:targetApi="31">
+        tools:targetApi="31"
+
+        android:usesCleartextTraffic="true">
         <activity
             android:name=".presentation.MainActivity"
             android:exported="true">

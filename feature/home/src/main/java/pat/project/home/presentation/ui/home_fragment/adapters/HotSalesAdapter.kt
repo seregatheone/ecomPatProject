@@ -2,6 +2,7 @@ package pat.project.home.presentation.ui.home_fragment.adapters
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -25,8 +26,10 @@ class HotSalesAdapter (private val parentContext: Context) : RecyclerView.Adapte
                 true -> binding.newItem.visibility = View.VISIBLE
                 false -> binding.newItem.visibility = View.GONE
             }
+            val url = item.productPhotoUrls.random().url
+            Log.i("urlkaHotSales",url)
             Glide.with(parentContext)
-                .load("https://img.ibxk.com.br/2020/09/23/23104013057475.jpg?w=1120&h=420&mode=crop&scale=both")
+                .load(url)
                 .centerCrop()
                 .into(binding.hotSalesImage)
         }

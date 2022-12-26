@@ -3,6 +3,7 @@ package pat.project.home.presentation.ui.home_fragment.adapters
 import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Paint
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -20,6 +21,7 @@ class BestSellerAdapter(private val parentContext: Context, private val navigate
     ) : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(item: Products) {
+            Log.i("startBinding","startBinding")
             binding.bestSellerLayout.setOnClickListener {
                 navigateToProductInfo()
             }
@@ -32,9 +34,10 @@ class BestSellerAdapter(private val parentContext: Context, private val navigate
 //                false -> binding.favoriteIconPictureId.visibility = View.GONE
 //            }
             binding.name.text = item.title
-
+            val url = item.productPhotoUrls.random().url
+            Log.i("urlkaBestSeller",url)
             Glide.with(parentContext)
-                .load("https://shop.gadgetufa.ru/images/upload/52534-smartfon-samsung-galaxy-s20-ultra-12-128-chernyj_1024.jpg")
+                .load(url)
                 .into(binding.bestSellerPicture)
         }
     }
@@ -47,6 +50,7 @@ class BestSellerAdapter(private val parentContext: Context, private val navigate
 
     override fun onBindViewHolder(holder: BestSellerViewHolder, position: Int) {
         val currentItem = allData[position]
+        Log.i("onBindViewHolder","onBindViewHolder")
         holder.bind(currentItem)
     }
 

@@ -28,9 +28,6 @@ class SignUpFragment :Fragment(R.layout.fragment_sign_up){
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        viewBinding.toHome.setOnClickListener{
-            navigate(signUpNavCommandProvider.toHomeScreen)
-        }
         super.onViewCreated(view, savedInstanceState)
     }
 }
